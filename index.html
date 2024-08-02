@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css/style.css" />
+  </head>
+  <body>
+    <section class="positivus">
+      <form action="#" class="positivus__form">
+        <div class="positivus__container">
+          <fieldset class="positivus__radio">
+            <label for="hi" class="positivus__label-radio">
+              <input
+                type="radio"
+                id="hi"
+                name="guest"
+                value="hi"
+                checked
+                class="positivus__radiobutton visually-hidden"
+              />
+              <span class="positivus__span-radio"></span>
+              Say Hi</label
+            >
+            <label for="quote" class="positivus__label-radio">
+              <input
+                type="radio"
+                id="quote"
+                name="guest"
+                value="quote"
+                class="positivus__radiobutton visually-hidden"
+              />
+              <span class="positivus__span-radio"></span>
+              Get a Quote</label
+            >
+          </fieldset>
+
+          <fieldset class="positivus__main-text">
+            <label for="name" class="positivus__label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              minlength="2"
+              maxlength="20"
+              placeholder="Name"
+              class="positivus__input"
+            />
+            <label for="email" class="positivus__label">Email*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="40"
+              placeholder="Email"
+              required
+              class="positivus__input"
+            />
+            <label for="message" class="positivus__label">Message*</label>
+            <textarea
+              id="message"
+              name="massage"
+              minlength="2"
+              maxlength="220"
+              placeholder="Message"
+              required
+              class="positivus__textarea"
+            ></textarea>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="positivus__button">Send Message</button>
+      </form>
+    </section>
+
+    <!-- <section class="portfolio">
+        <form action="#" class="portfolio__form">
+            <label for="name" class="portfolio__label"></label>
+            <input type="text" id="name" name="name" minlength="2" maxlength="30" required class="portfolio__input">
+            <label for="email" class="portfolio__label"></label>
+            <input type="email" id="email" name="email" maxlength="40" required class="portfolio__input">
+            <label for="subject" class="portfolio__label"></label>
+            <input type="text" id="subject" name="subject" maxlength="50" class="portfolio__input">
+            <label for="message" class="portfolio__label"></label>
+            <textarea id="message" name="massage" minlength="2" maxlength="220" required class="portfolio__textarea"></textarea>
+            <button class="portfolio__button">Send message</button>
+        </form>
+    </section> -->
+  </body>
+</html>
