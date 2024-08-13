@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css/style.css" />
   </head>
   <body>
@@ -78,18 +82,150 @@
       </form>
     </section>
 
-    <!-- <section class="portfolio">
-        <form action="#" class="portfolio__form">
-            <label for="name" class="portfolio__label"></label>
-            <input type="text" id="name" name="name" minlength="2" maxlength="30" required class="portfolio__input">
-            <label for="email" class="portfolio__label"></label>
-            <input type="email" id="email" name="email" maxlength="40" required class="portfolio__input">
-            <label for="subject" class="portfolio__label"></label>
-            <input type="text" id="subject" name="subject" maxlength="50" class="portfolio__input">
-            <label for="message" class="portfolio__label"></label>
-            <textarea id="message" name="massage" minlength="2" maxlength="220" required class="portfolio__textarea"></textarea>
-            <button class="portfolio__button">Send message</button>
-        </form>
-    </section> -->
+    <section class="portfolio">
+      <article class="portfolio__article">
+        <h2 class="portfolio__title">Get in touch</h2>
+        <p class="portfolio__subtitle">
+          I’m very approachable and would love to speak to you. Feel free to
+          call, send me an email . Follow me in social media or simply complete
+          the enquiry form.
+        </p>
+        <address class="portfolio__address">
+          <div class="portfolio__container">
+            <img
+              src="./image/portfolio__img-phone.png"
+              alt="#"
+              class="portfolio__img"
+            />
+            <a href="tel:1-514-456-2753" class="portfolio__contact"
+              >1-514-456-2753</a
+            >
+          </div>
+          <div class="portfolio__container">
+            <img
+              src="./image/portfolio__img-email.png"
+              alt="#"
+              class="portfolio__img"
+            />
+            <a href="mailto:Sou12@gmail.com" class="portfolio__contact"
+              >Sou12@gmail.com</a
+            >
+          </div>
+        </address>
+      </article>
+      <form action="#" class="portfolio__form">
+        <h2 class="portfolio__form-title">Send me a message</h2>
+        <label for="name" class="portfolio__label visually-hidden">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          minlength="2"
+          maxlength="30"
+          required
+          placeholder="Name"
+          class="portfolio__input"
+        />
+        <label for="email" class="portfolio__label visually-hidden"
+          >Email</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          maxlength="40"
+          required
+          placeholder="Email Adress"
+          class="portfolio__input"
+        />
+        <label for="subject" class="portfolio__label visually-hidden"
+          >Subject</label
+        >
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          maxlength="50"
+          placeholder="Subject"
+          class="portfolio__input"
+        />
+        <label for="message" class="portfolio__label visually-hidden"
+          >Message</label
+        >
+        <textarea
+          id="message"
+          name="massage"
+          minlength="2"
+          maxlength="220"
+          required
+          placeholder="Your message"
+          class="portfolio__textarea"
+        ></textarea>
+        <button type="submit" class="portfolio__button">Send message</button>
+      </form>
+    </section>
+
+    <section class="glass">
+      <form action="#" class="glass__form">
+        <h1 class="glass__logo">Your logo</h1>
+        <fieldset class="glass__content">
+          <h2 class="glass__login">Login</h2>
+          <label for="email" class="glass__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="40"
+            required
+            placeholder="username@gmail.com"
+            class="glass__input"
+          />
+          <label for="password" class="glass__label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            maxlength="30"
+            required
+            placeholder="Password"
+            class="glass__input"
+          />
+          <a href="#" class="glass__forgot-link">Forgot Password?</a>
+          <button type="submit" class="glass__button">Sing in</button>
+
+          <p class="glass__continue-with">or continue with</p>
+          <ul class="glass__list">
+            <li class="glass__item">
+              <a href="#" class="glass__item-link"
+                ><img
+                  src="./image/glass__img-google.png"
+                  alt="#"
+                  class="glass__img"
+              /></a>
+            </li>
+            <li class="glass__item">
+              <a href="#" class="glass__item-link"
+                ><img
+                  src="./image/glass__img-github.png"
+                  alt="#"
+                  class="glass__img"
+              /></a>
+            </li>
+            <li class="glass__item">
+              <a href="#" class="glass__item-link"
+                ><img
+                  src="./image/glass__img-facebook.png"
+                  alt="#"
+                  class="glass__img"
+              /></a>
+            </li>
+          </ul>
+          <p class="glass__register">
+            Don't have an account yet?
+            <a href="#" class="glass__register-link">Register for free</a>
+          </p>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>
